@@ -1,0 +1,61 @@
+---
+title: "Pacote Aritmetica"
+author: "Irwing Joshua"
+date: "18/02/2021"
+output: 
+  github_document:
+    fig_width: 9
+    fig_height: 5
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r warning = FALSE}
+library(contas)
+```
+
+Este pacote é simples e demonstrativo. Mostra como criar um pacote em R e possiu duas funções; somar e subtrair
+
+## Instalação
+
+Para instalar o pacote, use os comandos abaixo:
+
+```{r eval=FALSE}
+devtools::install_github("joshuairwing/aritmetica")
+```
+
+Não se esqueça de rodar o pacote. 
+
+## Usando as funções
+
+Esta função serve para somar (resultado abaixo.)
+
+```{r}
+somar (2,3)
+```
+
+Esta função subtrai. 
+
+```{r subratacao, eval=FALSE}
+subtrair (4,3)
+```
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars, echo=TRUE}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
